@@ -49,3 +49,5 @@
 [user]
 	name = Sheldon Els
 	email = sheldon.els@gmail.com
+[pull]
+	rebase = true
