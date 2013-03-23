@@ -38,3 +38,5 @@
 	email = sheldon.els@gmail.com
 [pull]
 	rebase = true
+[alias]
+	s = status --short
