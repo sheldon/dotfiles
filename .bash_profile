@@ -26,3 +26,6 @@ done
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
+
+#colour for ls
+export CLICOLOR=1
