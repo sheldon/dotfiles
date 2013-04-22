@@ -1,7 +1,6 @@
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
 	editor = subl -n -w
 
 [color]
@@ -10,6 +9,8 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	tool = opendiff
+	defaultToUpstream = 1
 
 # URL shorthands
 [url "git@github.com:"]
@@ -30,7 +31,11 @@
 [user]
 	name = Sheldon Els
 	email = sheldon.els@gmail.com
-[pull]
-	rebase = true
 [alias]
 	s = status --short
+  branchdate = !git for-each-ref --sort='-authordate' --format='%(authordate)%09%(refname)' refs
+  feature-branch = "!f() { branch_name=$1; shift; git checkout -b $branch_name $(git merge-base --octopus $*); }; f"
+[format]
+	pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %ci) %C(bold blue)<%an>%Creset
+[mergetool]
+	keepBackup = false
