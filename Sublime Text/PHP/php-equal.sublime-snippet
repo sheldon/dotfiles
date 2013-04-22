@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[<?${TM_PHP_OPEN_TAG:php}=\$${1:variable}?>]]></content>
+    <tabTrigger>=</tabTrigger>
+    <scope>text.html - source</scope>
+    <description>&lt;?=…?&gt;</description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[<?${TM_PHP_OPEN_TAG:php}print_r(\$${1:variable});exit;?>]]></content>
+    <tabTrigger>d</tabTrigger>
+    <scope>text.html - source</scope>
+    <description>&lt;?print_r(…);exit;?&gt;</description>
+</snippet>

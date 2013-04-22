@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[print_r(\$${1:this->});exit;]]></content>
+    <tabTrigger>d</tabTrigger>
+    <scope>source.php</scope>
+    <description>print_r(…);exit;</description>
+</snippet>
